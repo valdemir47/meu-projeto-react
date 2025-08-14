@@ -1,0 +1,15 @@
+/*aqui é o css global*/
+body{
+  padding: 50;
+  background-color: #efefef;
+  padding-bottom: 500px;
+}
+
+h1{
+  color: #da1010;
+}
+
+p{
+  background-color: #a5d9ff;
+  padding: 10px;
+}
