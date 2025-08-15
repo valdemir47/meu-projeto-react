@@ -4,9 +4,9 @@ import HelloWord from './components/HelloWord'; // importando um componente
 import SayMyName from './components/SayMyName';
 import Pessoa from './components/Pessoa';
 import Pessoa2 from './components/Pessoa';
-import Frase from './components/Frase';
 import List from './components/List';
 import Evento from './components/Evento';
+import Form from './components/Forms';
 
 
 
@@ -16,26 +16,27 @@ function App() {
   const name = 'Valdemir' // se n usar essa variavel, não dá erro, mas avisa que n tá usando
   const newName = name.toUpperCase()
   const url = 'https://via.placeholder.com/150'
-  
+
   const nome = 'Ravi'
 
-  function sum(a,b){
-    return a +b
+  function sum(a, b) {
+    return a + b
   }
-  return (  
+  return (
     <div className="App"> {/*os elementos tem que ta dentro de um elemento PAI* - className (não Class)*/}
-      <Evento numero ="1"/>
-      <List/>
+      <Evento numero="1" />
+      <Form />
+      <List />
       <h1>Teste</h1>
-      <frase/>
+      <frase />
       <HelloWord></HelloWord> {/*invocando componente*/}
-      <SayMyName nome ="Valdemir"/> {/*componente propos, inserindo o atributo*/}
-      <SayMyName nome ="Elisa"/> 
-      <SayMyName nome = {nome} /> {/*colocar uma var como atributo*/}
-      <Pessoa nome ="Valdemir" idade ="28" profissao ="Programador" foto="https://via.placeholder.com/150"/>
-      <Pessoa2 nome ="Valdemir" idade ="28" profissao ="Programador" foto="https://via.placeholder.com/150"/>
-     
-     
+      <SayMyName nome="Valdemir" /> {/*componente propos, inserindo o atributo*/}
+      <SayMyName nome="Elisa" />
+      <SayMyName nome={nome} /> {/*colocar uma var como atributo*/}
+      <Pessoa nome="Valdemir" idade="28" profissao="Programador" foto="https://via.placeholder.com/150" />
+      <Pessoa2 nome="Valdemir" idade="28" profissao="Programador" foto="https://via.placeholder.com/150" />
+
+
 
       {/* 
         <p>Olá, {name}</p>          
