@@ -1,23 +1,23 @@
-function Form(){
-    function CadastrarUsuario(e){
+function Form() {
+    function CadastrarUsuario(e) {
         e.preventDefault()
         console.log("Cadastrou o Usuário")
     }
 
-    return( 
+    return (
         <div>
-            <h1> Meu Cadastro</h1>
-            <form onSubmit={CadastrarUsuario}> 
+            <h1>Meu Cadastro</h1>
+            <form onSubmit={CadastrarUsuario}>
                 <div>
-                    <input type="text" aria-placeholder="Digite o seu nome"/>
+                    <input type="text" aria-placeholder="Digite o seu nome" />
                 </div>
 
                 <div>
-                    <input type="submit" value={"Cadastrar"}/>
+                    <input type="submit" value={"Cadastrar"} />
                 </div>
             </form>
-            
-        </div>   
+
+        </div>
     )
 }
 

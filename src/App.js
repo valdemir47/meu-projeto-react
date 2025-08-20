@@ -7,6 +7,7 @@ import Pessoa2 from './components/Pessoa';
 import List from './components/List';
 import Evento from './components/Evento';
 import Form from './components/Forms';
+import FormsUseState from './components/FormsUseState';
 
 
 
@@ -26,6 +27,7 @@ function App() {
     <div className="App"> {/*os elementos tem que ta dentro de um elemento PAI* - className (não Class)*/}
       <Evento numero="1" />
       <Form />
+      <FormsUseState />
       <List />
       <h1>Teste</h1>
       <frase />
