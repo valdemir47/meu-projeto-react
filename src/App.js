@@ -26,6 +26,7 @@ function App() {
   return (
     <div className="App"> {/*os elementos tem que ta dentro de um elemento PAI* - className (não Class)*/}
       <Evento numero="1" />
+      <Evento numero="35" />
       <Form />
       <FormsUseState />
       <List />
