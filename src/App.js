@@ -8,6 +8,8 @@ import List from './components/List';
 import Evento from './components/Evento';
 import Form from './components/Forms';
 import FormsUseState from './components/FormsUseState';
+import Condicional from './components/Condicional';
+
 
 
 
@@ -25,6 +27,8 @@ function App() {
   }
   return (
     <div className="App"> {/*os elementos tem que ta dentro de um elemento PAI* - className (não Class)*/}
+      <h1>Renderização Condicional:</h1>
+      <Condicional />     
       <Evento numero="1" />
       <Evento numero="35" />
       <Form />
