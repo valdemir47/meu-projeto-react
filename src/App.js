@@ -9,6 +9,7 @@ import Evento from './components/Evento';
 import Form from './components/Forms';
 import FormsUseState from './components/FormsUseState';
 import Condicional from './components/Condicional';
+import OutraLista from './components/OutraLista';
 
 
 
@@ -23,12 +24,19 @@ function App() {
   const nome = 'Ravi'
 
   function sum(a, b) {
-    return a + b
+    return a + b 
   }
+  const meusItens = ['React', 'Vue', 'Angular' ] //array que vai ser usada na renderização condicional abaixo
+  
   return (
     <div className="App"> {/*os elementos tem que ta dentro de um elemento PAI* - className (não Class)*/}
       <h1>Renderização Condicional:</h1>
-      <Condicional />     
+      <Condicional /> 
+      
+      <h1>Renderização de Listas:</h1>
+      <OutraLista itens={meusItens}/>
+
+
       <Evento numero="1" />
       <Evento numero="35" />
       <Form />
